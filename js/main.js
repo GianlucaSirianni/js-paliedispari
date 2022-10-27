@@ -17,4 +17,31 @@ function getPalindrome(){
 }
 
 
+//L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+//Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+//Sommiamo i due numeri
+//Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+//Dichiariamo chi ha vinto.
+
+function bimBumBam(){
+    let userOutcomeChoice = document.getElementById('pariDispari').value;
+    console.log(userOutcomeChoice);
+
+    let userNumberChoice = parseInt(document.getElementById('numberChoice').value);
+    console.log(userNumberChoice);
+
+    let pcNumberChoice = Math.floor(Math.random() * 5) + 1;
+    console.log(pcNumberChoice);
+
+    let userPcNumChoice = userNumberChoice + pcNumberChoice;
+    console.log(userPcNumChoice);
+
+        if ((userOutcomeChoice == "pari") && (userPcNumChoice % 2 == 0)){
+            document.getElementById('result').innerHTML = 'you WON';
+        } else if ((userOutcomeChoice == "dispari") && (userPcNumChoice % 2 !== 0)){
+            document.getElementById('result').innerHTML = 'you WON';
+        } else {
+            document.getElementById('result').innerHTML = 'you LOST';
+        }
+}
 

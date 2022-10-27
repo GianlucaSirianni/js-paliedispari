@@ -13,7 +13,27 @@
 <button onclick="getPalindrome()"> Generate</button>
 <h3 id="isItPal"></h3>
 
-    <script type="text/javascript" src="./js/main.js"></script>
+
+
+<h3>L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+    Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+    Sommiamo i due numeri
+    Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+    Dichiariamo chi ha vinto.</h3>
+
+    <br><br>
+
+<label for="pariDispari">Pari o Dispari?</label>
+<select id="pariDispari">
+    <option value="pari">Pari</option>
+    <option value="dispari">Dispari</option>
+</select>
+<label for="numberChoice">Scegli un numero:</label>
+<input type="text" id="numberChoice">
+<button onclick="bimBumBam()"> Generate</button>
+<h3 id="result"></h3>
+
+<script type="text/javascript" src="./js/main.js"></script>
 </body>
 
 </html>
